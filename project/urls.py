@@ -26,3 +26,5 @@ urlpatterns = [
     path('',include('authapp.urls')),
 ]+ static (settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 # attach static from setting , document_root = from settings file it will take media root
+
+urlpatterns +=static (settings.STATIC_URL,document_root=settings.STATIC_ROOT)
